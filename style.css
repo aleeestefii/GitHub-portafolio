@@ -1,26 +1,127 @@
+
+:root {
+  --orange: #F49306;
+  --red: #F13D09;
+  --pink: #E0858E;
+  --green: #C9B749;
+  --lime: #A5BB1A;
+  --gray: #DEDDE2;
+  --blue: #6DB8BE;
+  --aqua: #9EC6AA;
+  --soft-pink: #F5CAE8;
+  --hot-pink: #EE6A92;
+  --white: #fff;
+  --black: #111;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--soft-pink);
+  color: var(--black);
+}
+
+.hero {
+  height: 100vh;
+  background: url("assets/background.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid var(--hot-pink);
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+.btn {
+  background-color: var(--red);
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background: var(--aqua);
+  margin-top: 2rem;
+  border-left: 6px solid var(--green);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.project-card img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+  flex: 1;
+}
+
 .cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .cert-card {
-    background-color: var(--gray);
-    border-radius: 10px;
-    padding: 0.5rem;
-    text-align: center;
-  }
-  
-  .cert-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  }
-  
-  .cert-card p {
-    margin-top: 0.5rem;
-    font-weight: bold;
-    font-size: 0.9rem;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.cert-card {
+  background-color: var(--gray);
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.cert-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--orange);
+  color: var(--white);
+}
