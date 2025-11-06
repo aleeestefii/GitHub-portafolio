@@ -74,9 +74,9 @@ h1 {
   padding: 2rem;
   max-width: 900px;
   margin: auto;
-  background: var(--aqua);
+  background: #1a001a; /* dark magenta tone for subtle contrast */
   margin-top: 2rem;
-  border-left: 6px solid var(--green);
+  border-left: 6px solid var(--hot-pink);
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -86,6 +86,7 @@ h1 {
 .content.visible {
   opacity: 1;
   transform: translateY(0);
+  color: var(--white);
 }
 
 .project-card {
