@@ -107,6 +107,7 @@ h1 {
 .project-info {
   padding: 1rem;
   flex: 1;
+  color: var(--black);
 }
 
 .cert-grid {
