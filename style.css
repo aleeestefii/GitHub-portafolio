@@ -1,17 +1,17 @@
 
 :root {
-  --orange: #FAC898;
-  --red: #FAC898;
-  --pink: #FAC898;
-  --green: #89CFF0;
-  --lime: #FAC898;
-  --gray: #DEDDE2;
-  --blue: #6DB8BE;
-  --aqua: #FAC898;
-  --soft-pink: #89CFF0;
-  --hot-pink: #89CFF0;
+  --orange: #FF00FF;
+  --red: #FF00FF;
+  --pink: #FF00FF;
+  --green: #000000;
+  --lime: #FF00FF;
+  --gray: #111111;
+  --blue: #FF00FF;
+  --aqua: #000000;
+  --soft-pink: #000000;
+  --hot-pink: #FF00FF;
   --white: #fff;
-  --black: #111;
+  --black: #000;
 }
 
 body {
@@ -32,6 +32,7 @@ body {
   color: var(--white);
   position: relative;
 }
+
 .profile {
   width: 100px;
   height: 100px;
